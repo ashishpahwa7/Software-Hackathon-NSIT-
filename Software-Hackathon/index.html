@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+  	
+	<title>Android is Awesome</title>
+</head>
+<body>
+    
+	<header class="cd-header">
+        
+	<br>
+        
+<button onclick="clickCounter()" type="button" class="btn">DOWNLOAD</button>
+<div id="result"></div>
+
+        <br>
+	</header>
+
+	<main class="cd-main-content">
+		<div class="cd-product-intro">
+			<h1>Android is Awesome</h1>
+			<p>CLick on Start for getting for information<br>Click Download For Downloading the Information</p>
+			<div class="cd-triggers">
+               
+                    
+                <script>
+function clickCounter() {
+    if(typeof(Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+            localStorage.clickcount = Number(localStorage.clickcount)+1;
+        } else {
+            localStorage.clickcount = 1;
+        }
+      
+        document.getElementById("result").innerHTML = "Page is Viewed by " + localStorage.clickcount + " time(s).";
+  	location.href = "http://localhost:10001" + "?number1=" + localStorage.clickcount;      
+    } else {
+        document.getElementById("result").innerHTML = "Sorry, Memory Penalty";
+    }
+}
+</script>
+
+
+
+
+                              <script>
+function clickCounter1() {
+    if(typeof(Storage) !== "undefined") {
+        if (localStorage.clickcount1) {
+            localStorage.clickcount1 = Number(localStorage.clickcount1)+1;
+        } else {
+            localStorage.clickcount1 = 1;
+        }
+      
+        document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount1 + " time(s).";
+        
+    } else {
+        document.getElementById("result1").innerHTML = "Sorry, Memory Penalty";
+    }
+}
+</script> 
+                
+
+
+                <body>
+<p><button onclick="clickCounter()" type="button" class="btn">DOWNLOAD</button></p>
+<div id="result"></div>
+</body>
+              
+				<a href="#cd-product-tour" class="btn salmon" data-type="cd-tour" button onclick="clickCounter1()">Start</a><div id="result1"></div>
+                
+               
+			</div>
+		</div> <!-- cd-product-intro -->
+
+		<div id="cd-product-tour">
+			<ul>
+				<li class="cd-single-item cd-active">
+					<div class="cd-caption">
+						<h2>First Feature</h2>
+						<p>You can scroll down on your layout for better environment .It is better and You will love it
+						</p>
+					</div>
+					<div class="cd-image-container">
+						<div>
+							<div class="cd-phone-frame"></div>
+							<div class="cd-image-wrapper">
+								<img src="img/screen-1.png" data-video="video/video-1" alt="Screen Preview 1">
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="cd-single-item cd-not-visible cd-move-right">
+					<div class="cd-caption">
+						<h2>Second Feature</h2>
+						<p>You Can Add a New Entry in the Android App	
+						</p>
+					</div>
+					<div class="cd-image-container">
+						<div>
+							<div class="cd-phone-frame"></div>
+							<div class="cd-image-wrapper">
+								<img src="img/screen-2.png" data-video="video/video-2" alt="Screen Preview 2">
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="cd-single-item cd-not-visible cd-move-right">
+					<div class="cd-caption">
+						<h2>Last but Not Least Feature</h2>
+						<p>You can travel to different list as per your convenience and it also looks awesome	
+						</p>
+					</div>
+					<div class="cd-image-container">
+						<div>
+							<div class="cd-phone-frame"></div>
+							<div class="cd-image-wrapper">
+								<img src="img/screen-3.png" data-video="video/video-3" alt="Screen Preview 3">
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div> <!-- cd-product-tour -->
+
+		<div class="cd-slider-nav">
+			<a class="cd-prev" href="#0">Previous</a>
+			<a class="cd-next" href="#0">Next</a>
+		</div> <!-- cd-slider-nav -->
+
+		<div class="cd-loader"></div> <!-- top loading bar -->
+	</main>
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>
